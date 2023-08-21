@@ -6,6 +6,7 @@ module(
 
 bazel_dep(name = "bazel_skylib", version = "1.4.2")
 bazel_dep(name = "bzip2", version = "1.0.8")
+bazel_dep(name = "lzma", version = "5.4.4", repo_name = "org_lzma_lzma")
 bazel_dep(name = "platforms", version = "0.0.7")
 bazel_dep(name = "rules_cc", version = "0.0.8")
 bazel_dep(name = "rules_foreign_cc", version = "0.9.0")
@@ -14,5 +15,5 @@ non_module_dependencies = use_extension("//:extensions.bzl", "non_module_depende
 use_repo(non_module_dependencies, "boost")
 use_repo(non_module_dependencies, "com_github_facebook_zstd")
 use_repo(non_module_dependencies, "openssl")
-use_repo(non_module_dependencies, "org_lzma_lzma")
+#use_repo(non_module_dependencies, "org_lzma_lzma")
 use_repo(non_module_dependencies, "zlib")

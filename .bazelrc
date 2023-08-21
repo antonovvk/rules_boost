@@ -1,1 +1,2 @@
 common --enable_bzlmod
+common --registry=https://raw.githubusercontent.com/antonovvk/bazel-central-registry/rules_boost/
